@@ -1,0 +1,32 @@
+.dnone {
+    display:none;
+}
+
+.dblock{
+    display:block;
+}
+
+
+.want_cat p a.clicked {
+		font-family:"Agency FB";
+		font-size:14px;
+		text-decoration:none;
+		color:#CC6600;
+}
+
+
+#products p.clicked {
+	background:#fbd5b5;
+}
+
+#products .clicked  a{
+    color: #CC6600;
+}
+
+#product_types p.clicked {
+	background:#fbd5b5;
+}
+
+#product_types .clicked  a{
+    color: #CC6600;
+}
