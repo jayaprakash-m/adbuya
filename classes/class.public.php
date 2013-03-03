@@ -22,18 +22,37 @@ class Pub
 	}
 	
 	
-	public function getProducts($id){
-	   // To get the category list
+	public function getCategory($id,$level_no){
+	   // To get the categories list
 	   $arr = array();
-	   $query = "select id,name from master_products where category_id = $id";
+	   
+	   if($level_no == 2)
+	   {
+			$query = "select id,category_name from ad_master_categorylevel2 where cat_level1_id = '$id' and status = '1'";
+	   }
+	   else if($level_no == 3)
+	   {
+			$query = "select id,category_name from ad_master_categorylevel3 where cat_level2_id = '$id' and status = '1'";
+	   }
+	   else if($level_no == 4)
+	   {
+			$query = "select id,category_name from ad_master_categorylevel4 where cat_level3_id = '$id' and status = '1'";
+	   }
+	   else
+	   {
+			$query = "select id,category_name from ad_master_categorylevel where status = '1'";
+	   }
+
+       //echo $query;	   
 	   $result  = mysql_query($query);
 	   while($res = mysql_fetch_array($result))
 	   {
-		   $arr[$res['id']] = $res['name'];
+		   $arr[$res['id']] = $res['category_name'];
 	   }
-	   return $arr;
-	   
+	   return $arr;   
 	}
+	
+	
 	
 	public function getProduct_types($id){
 	   // To get the category list

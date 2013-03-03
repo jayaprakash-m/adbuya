@@ -8,7 +8,6 @@ function job_post_plus()
 	$('.expand_bor').removeClass('dnone').addClass('dblock');
 }
 
-
 //onclicking Job Post Minus button
 function job_post_minus()
 {
@@ -104,26 +103,27 @@ $(document).ready(function(){
 });
 
 	// Categories onclick.
-	function getProducts(id,thisdiv)
+	function getCategory_1(id,thisdiv,level_no)
 	{
 	   $('.want_cat').find("a").removeClass('clicked');
 	   $(thisdiv).find("a").addClass('clicked');
        
 	        $("#category_id").val(id);
-	   	// get products based on category.
+	   	// get category_2 based on category.
 		$.ajax({
 		type: "POST",
-		url: "ajax/product",
+		url: "ajax/category",
 		dataType : 'JSON',
-		data: { category_id: id}
+		data: {'category_id': id,'level_no':level_no}
 		}).done(function( data_val ) {	
-		    $("#products").html("");
+		    $("#category_2").html("");
+			$("#category_3").html("");
 			$.each(data_val,function(i,val){
 			    //alert(i+"  "+val);
-				$("#products").append('<div class="cat_list" onclick="getProductTypes('+i+',this)" id='+i+'><p><a href="javascript:void(0);">'+val+'</a></p></div>');
+				$("#category_2").append('<div class="cat_list" onclick="getCategory_2('+i+',this,3)" id='+i+'><p><a href="javascript:void(0);">'+val+'</a></p></div>');
 			});
-			// Products onmouseover change class
-			$('#products .cat_list').hover(function(){
+			// category_2 onmouseover change class
+			$('#category_2 .cat_list').hover(function(){
 			   $(this).find("p").addClass('select');
 			   $(this).find("a").addClass('active');
 			},
@@ -146,28 +146,28 @@ $(document).ready(function(){
 		});
 	}
 	
-    // Products onclick.
-	function getProductTypes(id,thisdiv)
+    // category_2 onclick.
+	function getCategory_2(id,thisdiv,level_no)
 	{
 
-           $("#product_id").val(id);
-	   $('#products .cat_list').find("p").removeClass('clicked');
+       $("#product_id").val(id);
+	   $('#category_2 .cat_list').find("p").removeClass('clicked');
 	   $(thisdiv).find("p").addClass('clicked');
 	   
-	   	// get products based on category.
+	   	// get category_2 based on category.
 		$.ajax({
 		type: "POST",
-		url: "ajax/product_type",
+		url: "ajax/category",
 		dataType : 'JSON',
 		cache:false,
-		data: { product_type_id: id}
+		data: {'category_id': id,'level_no':level_no}
 		}).done(function( data_val ) {	
-		    $("#product_types").html("");
+		    $("#category_3").html("");
 			$.each(data_val,function(i,val){
-				$("#product_types").append('<div class="cat_list"  id='+i+'><p><a href="javascript:void(0);">'+val+'</a></p></div>');
+				$("#category_3").append('<div class="cat_list"  id='+i+'><p><a href="javascript:void(0);">'+val+'</a></p></div>');
 			});
 			
-			$('#product_types .cat_list').hover(function(){
+			$('#category_3 .cat_list').hover(function(){
 			   $(this).find("p").addClass('select');
 			   $(this).find("a").addClass('active');
 			},
@@ -177,9 +177,9 @@ $(document).ready(function(){
 			});
 			
 			// Product Types onclick.
-			$('#product_types .cat_list').click(function(){
-			$('#product_types .cat_list').find("p").removeClass('clicked');
-                        $("#product_type_id").val($(this).attr('id'));
+			$('#category_3 .cat_list').click(function(){
+			$('#category_3 .cat_list').find("p").removeClass('clicked');
+             $("#product_type_id").val($(this).attr('id'));
 			$(this).find("p").addClass('clicked');
 			});
 		

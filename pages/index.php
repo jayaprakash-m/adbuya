@@ -188,25 +188,25 @@
                                                <div class="scat">Select Category</div>
                         	<div class="want_category">
                             
-                            	<div class="want_cat" onclick="getProducts(1,this);">
+                            	<div class="want_cat" onclick="getCategory_1(1,this,2);">
                                 	<p><a href="javascript:void(0);">Electronic <br />Goods</a></p>
                                 </div>
-                            	<div class="want_cat" onclick="getProducts(2,this);">
+                            	<div class="want_cat" onclick="getCategory_1(2,this,2);">
                                 	<p><a href="javascript:void(0);">Home & Office  <br />Goods</a></p>
                                 </div>	
-                            	<div class="want_cat" onclick="getProducts(3,this);">
+                            	<div class="want_cat" onclick="getCategory_1(3,this,2);">
                                 	<p><a href="javascript:void(0);">Consumers <br />Goods</a></p>
                                 </div>	
-                            	<div class="want_cat" onclick="getProducts(4,this);">
+                            	<div class="want_cat" onclick="getCategory_1(4,this,2);">
                                 	<p><a href="javascript:void(0);">Vehicles <br /></a></p>
                                 </div>	
-                            	<div class="want_cat" onclick="getProducts(5,this);">
+                            	<div class="want_cat" onclick="getCategory_1(5,this,2);">
                                 	<p><a href="javascript:void(0);">Real Estate &  <br />Developers</a></p>
                                 </div>	
-                            	<div class="want_cat" onclick="getProducts(6,this);">
+                            	<div class="want_cat" onclick="getCategory_1(6,this,2);">
                                 	<p><a href="javascript:void(0);">Jobs <br /></a></p>
                                 </div>	
-                            	<div class="want_cat" onclick="getProducts(7,this);">
+                            	<div class="want_cat" onclick="getCategory_1(7,this,2);">
                                 	<p><a href="javascript:void(0);">Services <br /></a></p>
                                 </div>	                                	
                             </div>
@@ -216,7 +216,7 @@
 						
 						
                         <div class="w_cat">
-                        	<div class="w_cat_list" id="products">
+                        	<div class="w_cat_list" id="category_2">
                             	<!--
 								<div class="cat_list">
                                 <p class="select"><a href="#" class="active">Cars</a></p>
@@ -248,7 +248,7 @@
                             </div>
 							
 							
-                        	<div class="w_cat_list" id="product_types">
+                        	<div class="w_cat_list" id="category_3">
                             	<!--
 								<div class="cat_list">
                                 <p><a href="#" >Petrol Car</a></p>

@@ -15,18 +15,18 @@
 }
 
 
-#products p.clicked {
+#category_2 p.clicked {
 	background:#fbd5b5;
 }
 
-#products .clicked  a{
+#category_2 .clicked  a{
     color: #CC6600;
 }
 
-#product_types p.clicked {
+#category_3 p.clicked {
 	background:#fbd5b5;
 }
 
-#product_types .clicked  a{
+#category_3 .clicked  a{
     color: #CC6600;
 }
