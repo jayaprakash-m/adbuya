@@ -7,6 +7,7 @@
 	$db = new Dbconnection();
 	$pub = new pub();
         $id = $_REQUEST['category_id'];
-	$productlist_by_category = $pub->getProducts($id);
+		$level_no = $_REQUEST['level_no'];
+	$productlist_by_category = $pub->getCategory($id,$level_no);
 	echo json_encode($productlist_by_category);
 ?>
