@@ -103,8 +103,9 @@ $(document).ready(function(){
 });
 
 	// Categories onclick.
-	function getCategory_1(id,thisdiv,level_no)
+	function getCategory_1(id,thisdiv,level_no,id)
 	{
+	toparrow(id);
 	   $('.want_cat').find("a").removeClass('clicked');
 	   $(thisdiv).find("a").addClass('clicked');
        
@@ -197,4 +198,37 @@ $(document).ready(function(){
 		});
 		 return false;
 	}
-	
+
+
+function toparrow(id) {
+	jQuery(function ($){
+		if(id=="cat1") {
+			$('.top_arrow').show();
+			$('.top_arrow').css('left','-285px');
+		}	
+		if(id=="cat2") {
+			$('.top_arrow').show();	
+			$('.top_arrow').css('left','-156px');
+		}	
+		if(id=="cat3") {
+			$('.top_arrow').show();
+			$('.top_arrow').css('left','-24px');
+		}	
+		if(id=="cat4") {
+			$('.top_arrow').show();
+			$('.top_arrow').css('left','103px');
+		}	
+		if(id=="cat5") {
+			$('.top_arrow').show();
+			$('.top_arrow').css('left','230px');
+		}	
+		if(id=="cat6") {
+			$('.top_arrow').show();
+			$('.top_arrow').css('left','360px');
+		}	
+		if(id=="cat7") {
+			$('.top_arrow').show();
+			$('.top_arrow').css('left','485px');
+		}	
+	});
+}
