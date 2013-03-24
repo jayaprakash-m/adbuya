@@ -109,7 +109,7 @@ $(document).ready(function(){
 	   $('.want_cat').find("a").removeClass('clicked');
 	   $(thisdiv).find("a").addClass('clicked');
        
-	    $("#category_id").val(id);
+	    $("#category_level1").val(id);
 	   	// get category_2 based on category.
 		$.ajax({
 		type: "POST",
@@ -139,7 +139,7 @@ $(document).ready(function(){
 	function getCategory_3(id,thisdiv,group_no)
 	{
 
-       $("#product_id").val(id);
+       $("#category_level2").val(id);
 	   $('#category_2 .cat_list').find("p").removeClass('clicked');
 	   $(thisdiv).find("p").addClass('clicked');
 	   
@@ -165,11 +165,12 @@ $(document).ready(function(){
 			   $(this).find("a").removeClass('active');
 			});
 			
-			// Product Types onclick.
-			$('#category_3 .cat_list').click(function(){
-			$('#category_3 .cat_list').find("p").removeClass('clicked');
-             $("#product_type_id").val($(this).attr('id'));
-			$(this).find("p").addClass('clicked');
+			// On Category3 onclick.
+			$('#category_3 .cat_list').click(function()
+			{
+				$('#category_3 .cat_list').find("p").removeClass('clicked');
+				 $("#category_level3").val($(this).attr('id'));
+				$(this).find("p").addClass('clicked');
 			});		
 			
 			
