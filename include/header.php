@@ -6,19 +6,22 @@ $pub = new Pub();
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Addbuya</title>
+
+<title>adbuya</title>
 <link rel="shortcut icon" href="images/favicon.ico" />
-<link href="styles/styles.css" type="text/css" rel="stylesheet" />
+<link href="/styles/styles.css" type="text/css" rel="stylesheet" />
+<link href="/styles/addbuya.css" type="text/css" rel="stylesheet" />
 <link rel="stylesheet" href="scripts/chosen/chosen.css" />
 <link type='text/css' href='styles/stylesheet.css' rel='stylesheet' media='screen' />
 <link type='text/css' href='styles/basic.css' rel='stylesheet' media='screen' />
-<link href="styles/addbuya.css" type="text/css" rel="stylesheet" />
 
-<script src="scripts/jquery-1.9.0.min.js" type="text/javascript"></script>
-<script src="scripts/addbuya.js" type="text/javascript"></script>
-<script src="scripts/chosen/chosen.jquery.js" type="text/javascript"></script>
+<!--<script src="/scripts/jquery-1.9.0.min.js" type="text/javascript"></script>-->
+<script type="text/javascript" src="/scripts/jquery-1.8.1.js" ></script>
+<script type="text/javascript" src="/scripts/addbuya.js" ></script>
 <script type="text/javascript" src="scripts/jquery.simplemodal.js"></script>
 <script type="text/javascript" src="scripts/init.js"></script>
+<script src="scripts/chosen/chosen.jquery.js" type="text/javascript"></script>
+
 <script type="text/javascript">
 	/*
    Function : ddWithAutoSuggest()
@@ -67,11 +70,10 @@ function ddWithAutoSuggest(){
         <div class="search_area">
 
         	<div class="search_but">
-			<div class="ui-input">
-        	  <input type="text" name="textfield" id="textfield" placeholder="Enter Your Search term here…" maxlength="50"  class="inputbox"/>
-			  <span class="ui-icon-delete"><img src="images/addbuya-Red-X-Icon.jpg"></span>
-			</div>
-			<div class="ui-input">
+
+        	  <input type="text" name="textfield" id="textfield" placeholder="Enter Your Search term here…"  class="inputbox"/>
+              <!--<input type="text" name="textfield2" id="textfield2" value="Enter Your Location here…" class="inputbox"/>-->
+			  			<div class="ui-input">
 		<select data-placeholder="Levy..." style="width:43%" class="chzn-select optionCls txtbox wid inputbox" name="idfetchlevy" id="idfetchlevy">
 		<option>--Select City--</option>
 		<option>Bangalore</option>
@@ -89,7 +91,7 @@ function ddWithAutoSuggest(){
              <!-- <input type="text" name="textfield2" id="textfield2" placeholder="Enter Your Location here…" class="inputbox"/>
 			  <span class="ui-icon-delete"><img src="http://www.uwindsor.ca/its/lotusnotes/sites/uwindsor.ca.its.lotusnotes/files/Red-X-Icon.jpg"></span>-->
 			</div>
-			
+
         	  <input type="submit" name="button" id="button" value="" class="sub_but" />
         	</div>
         </div>
