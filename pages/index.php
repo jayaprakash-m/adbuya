@@ -22,27 +22,41 @@
                     	<div class="select_cat">
                                                <div class="scat">Select Category</div>
                         	<div class="want_category">
+
 							
                             	<div class="want_cat" id="cat1" onclick="getCategory_1(1,this,2,this.id);">
                                 	<p><a href="javascript:void(0);"><img src="images/search_icon.gif"><br />Electronic <br />Goods</a></p>
+
                                 </div>
+
                             	<div class="want_cat" id="cat2" onclick="getCategory_1(2,this,2,this.id);">
                                 	<p><a href="javascript:void(0);"><img src="images/search_icon.gif"><br />Home & Office  <br />Goods</a></p>
+
                                 </div>	
+
                             	<div class="want_cat" id="cat3" onclick="getCategory_1(3,this,2,this.id);">
                                 	<p><a href="javascript:void(0);"><img src="images/search_icon.gif"><br />Consumers <br />Goods</a></p>
+
                                 </div>	
+
                             	<div class="want_cat" id="cat4" onclick="getCategory_1(4,this,2,this.id);">
                                 	<p><a href="javascript:void(0);"><img src="images/search_icon.gif"><br />Vehicles <br /></a></p>
+
                                 </div>	
+
                             	<div class="want_cat" id="cat5" onclick="getCategory_1(5,this,2,this.id);">
                                 	<p><a href="javascript:void(0);"><img src="images/search_icon.gif"><br />Real Estate &  <br />Developers</a></p>
+
                                 </div>	
+
                             	<div class="want_cat" id="cat6" onclick="getCategory_1(6,this,2,this.id);">
                                 	<p><a href="javascript:void(0);"><img src="images/search_icon.gif"><br />Jobs <br /></a></p>
+
                                 </div>	
+
                             	<div class="want_cat" id="cat7" onclick="getCategory_1(7,this,2,this.id);">
                                 	<p><a href="javascript:void(0);"><img src="images/search_icon.gif"><br />Services <br /></a></p>
+
                                 </div>	                                	
                             </div>
                         </div>
@@ -65,36 +79,9 @@
 						
 						<div id="dynamic_form_fields">
 						</div>
-                    <div class="w_cat1">
-                       	  <div class="label">
-                            	<span>*</span>Price :  
-                          </div>
-                            <div class="box_area">
-                              <input type="text" name="price" value="3,00,000" class="textbox" /> 
-                              <input type="radio" name="price"  value="radio5" /> 
-                              Contact me                            </div>
-                        </div>
-                        
-					<div class="w_cat1">
-                       	  <div class="label">
-                            	<span class="space"></span>Delivery Mode :
-                          </div>
-                            <div class="box_area">
-									<select name="delivery_mode">
-                                    	<option>Direct Pick Up</option>
-                                    </select> 
-									                           
-                               </div>
-                        </div>
-                        
-				<div class="w_cat1">
-                       	  <div class="label">
-                            	<span  class="space"></span>Free with this : 
-                          </div>
-                            <div class="box_area">
-                              <input type="text" name="free_with_this" id="free_with_this" value="5 Services Free" class="textbox" />
-                            </div>
-                        </div>
+						
+						
+
                         <div class="w_cat1">
                        	  <div class="label">
                             	<span>*</span>Your Ad Title :
@@ -223,14 +210,16 @@
                            	</div>
                         </div>
 
-                    <div class="w_cat1">
+						
+						<div class="w_cat1">
                        	  <div class="label">
-                            	<span>*</span>Tag:
+                            	<span>*</span>Tags:
                           </div>
                             <div class="box_area">
-                           	  <input type="text" name="tag" id="tag" value="" class="textbox" /> 
+                           	  <input type="text" name="tags" id="tags" class="textbox" /> 
                            	</div>
-                        </div>                        
+                        </div>
+
                         <input type="hidden" name="category_id" id="category_id" value="">
                         <input type="hidden" name="product_id" id="product_id" value="">
                         <input type="hidden" name="product_type_id" id="product_type_id" value="">
