@@ -28,7 +28,7 @@ class Pub
 	   
 	   if($level_no == 2)
 	   {
-			$query = "select id,category_name from ad_master_categorylevel2 where cat_level1_id = '$id' and status = '1'";
+			$query = "select id,category_name,group_id from ad_master_categorylevel2 where cat_level1_id = '$id' and status = '1'";
 	   }
 	   else if($level_no == 3)
 	   {
@@ -42,13 +42,25 @@ class Pub
 	   {
 			$query = "select id,category_name from ad_master_categorylevel where status = '1'";
 	   }
-
-       //echo $query;	   
+	   
 	   $result  = mysql_query($query);
-	   while($res = mysql_fetch_array($result))
+	   if($level_no == 2)
 	   {
-		   $arr[$res['id']] = $res['category_name'];
+			while($res = mysql_fetch_array($result))
+			{
+				$arr[$res['id']]['name'] = $res['category_name'];
+				$arr[$res['id']]['group_id'] = $res['group_id'];
+			}
 	   }
+	   else
+	   {
+	   		while($res = mysql_fetch_array($result))
+			{
+				$arr[$res['id']] = $res['category_name'];
+			}
+	   }
+		
+	   
 	   return $arr;   
 	}
 	
