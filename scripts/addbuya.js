@@ -103,25 +103,25 @@ $(document).ready(function(){
 });
 
 	// Categories onclick.
-	function getCategory_1(id,thisdiv,level_no,id)
+	function getCategory_2(id,thisdiv,level_no)
 	{
 	toparrow(id);
 	   $('.want_cat').find("a").removeClass('clicked');
 	   $(thisdiv).find("a").addClass('clicked');
        
-	        $("#category_id").val(id);
+	    $("#category_id").val(id);
 	   	// get category_2 based on category.
 		$.ajax({
 		type: "POST",
 		url: "ajax/category",
 		dataType : 'JSON',
-		data: {'category_id': id,'level_no':level_no}
+		data: {'category_id': id,'level_no':2}
 		}).done(function( data_val ) {	
 		    $("#category_2").html("");
 			$("#category_3").html("");
 			$.each(data_val,function(i,val){
 			    //alert(i+"  "+val);
-				$("#category_2").append('<div class="cat_list" onclick="getCategory_2('+i+',this,3)" id='+i+'><p><a href="javascript:void(0);">'+val+'</a></p></div>');
+				$("#category_2").append('<div class="cat_list" onclick="getCategory_3('+i+',this,'+val.group_id+')" id='+val.group_name+'><p><a href="javascript:void(0);">'+val.name+'</a></p></div>');
 			});
 			// category_2 onmouseover change class
 			$('#category_2 .cat_list').hover(function(){
@@ -133,22 +133,10 @@ $(document).ready(function(){
 			   $(this).find("a").removeClass('active');
 			});
 		});
-		
-		
-            $("#form_type_id").val(id);
-	   // Call dynamic form throug ajax..
-		$.ajax({
-		type: "POST",
-		url: "ajax/form",
-		data: { category_id: id}
-		}).done(function( data_val ) {
-		//alert( "Data Saved: " + msg );
-		$('#dynamic_form_fields').html(data_val);
-		});
 	}
 	
     // category_2 onclick.
-	function getCategory_2(id,thisdiv,level_no)
+	function getCategory_3(id,thisdiv,group_no)
 	{
 
        $("#product_id").val(id);
@@ -161,7 +149,7 @@ $(document).ready(function(){
 		url: "ajax/category",
 		dataType : 'JSON',
 		cache:false,
-		data: {'category_id': id,'level_no':level_no}
+		data: {'category_id': id,'level_no':3}
 		}).done(function( data_val ) {	
 		    $("#category_3").html("");
 			$.each(data_val,function(i,val){
@@ -182,9 +170,22 @@ $(document).ready(function(){
 			$('#category_3 .cat_list').find("p").removeClass('clicked');
              $("#product_type_id").val($(this).attr('id'));
 			$(this).find("p").addClass('clicked');
+			});		
+			
+			
+			$("#form_type_id").val(group_no);
+			// Call dynamic form throug ajax..
+			$.ajax({
+			type: "POST",
+			url: "ajax/form",
+			data: {'form_type_id': group_no}
+			}).done(function( data_val ) {
+			//alert( "Data Saved: " + msg );
+			$('#dynamic_form_fields').html(data_val);
 			});
-		
+
 		}); 
+		
 	}
 	
 	function post_offer_ad()
