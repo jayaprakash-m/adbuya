@@ -1,4 +1,4 @@
-        <div class="content_area">
+       	   <div class="content_area">
             <div class="expand_bor dnone">
 				<div class="collaps">
                     <div class="expandall" onclick="collaps_all();">
@@ -102,7 +102,7 @@
                         
                         <div class="w_cat1">
                        	  <div class="label1">
-                            <textarea class="textarea" rows="50" cols="40"></textarea>
+                            <textarea class="textarea" name="your_ad_desc" id="your_ad_desc" rows="50" cols="40"></textarea>
                           </div>   
                         </div>
                         
@@ -114,7 +114,7 @@
                         
                         <div class="w_cat1">
                        	  <div class="label2">
-                            <textarea class="textarea" rows="50" cols="40"></textarea>
+                            <textarea class="textarea" name="your_sms_look" id="your_sms_look"rows="50" cols="40"></textarea>
                           </div>   
                         </div>
                         
@@ -181,11 +181,25 @@
                             	<span>*</span>Location  :
                           </div>
                             <div class="box_area">
-									<select name="location">
-                                    	<option value="0">Select</option>
+									<select name="city">
+                                    	<option value="0">-Select City-</option>
+										<?php
+
+										foreach($citylist as $key=>$cty)
+										{
+											echo "<option value='".$key."'>".$cty."</option>";
+										}
+										?>
                                     </select> 
 									<select name="area">
-                                    	<option value="0">Select</option>
+                                    	<option value="0">-Select Area-</option>
+										<?php
+
+										foreach($arealist as $key=>$area)
+										{
+											echo "<option value='".$key."'>".$area."</option>";
+										}
+										?>
                                     </select>                           
                                </div>
                         </div>
@@ -195,7 +209,7 @@
                             	<span>*</span>Contact By :
                           </div>
                             <div class="box_area">
-                           	  <input type="radio" name="contact_by" value="Email" /> 
+                           	  <input type="radio" checked name="contact_by" value="Email" /> 
                            	  E-mail  &nbsp;&nbsp;&nbsp;
                            	   <input type="radio" name="contact_by" value="Used" /> 
                            	   Used                            </div>
@@ -220,9 +234,10 @@
                            	</div>
                         </div>
 
-                        <input type="hidden" name="category_id" id="category_id" value="">
-                        <input type="hidden" name="product_id" id="product_id" value="">
-                        <input type="hidden" name="product_type_id" id="product_type_id" value="">
+						<input type="hidden" name="category_level1" id="category_level1" value="">
+                        <input type="hidden" name="category_level2" id="category_level2" value="">
+                        <input type="hidden" name="category_level3" id="category_level3" value="">
+						 <input type="hidden" name="category_level4" id="category_level4" value=""> 
                         <input type="hidden" name="form_type_id" id="form_type_id" value="">
 
                         <div class="w_cat1">
