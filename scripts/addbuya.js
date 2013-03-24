@@ -103,9 +103,9 @@ $(document).ready(function(){
 });
 
 	// Categories onclick.
-	function getCategory_2(id,thisdiv,level_no)
+	function getCategory_2(id,thisdiv,id1)
 	{
-	toparrow(id);
+	   toparrow(id1);
 	   $('.want_cat').find("a").removeClass('clicked');
 	   $(thisdiv).find("a").addClass('clicked');
        
