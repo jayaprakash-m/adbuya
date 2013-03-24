@@ -5,13 +5,13 @@
                         <a href="#">Collaps All</a>
                     </div>
                 </div>
-            	<div class="just_expand  dnone" id="just_post_want_add">
+            	<div class="just_expand  dnone" style="cursor:pointer;" id="just_post_want_add">
                 	<h3>+ 	Post Your Want Ad</h3>
                 </div>
-				<div class="just_expand  dnone" id="just_post_off_add_plus"  onclick="just_post_off_add_plus();">
+				<div class="just_expand  dnone" style="cursor:pointer;" id="just_post_off_add_plus"  onclick="just_post_off_add_plus();">
                 	<h3>+ 	Post Your Offer Ad</h3>
                 </div>
-				<div class="just_expand  dnone" id="just_post_off_add_minus"  onclick="just_post_off_add_minus();">
+				<div class="just_expand  dnone" style="cursor:pointer;" id="just_post_off_add_minus"  onclick="just_post_off_add_minus();">
                 	<h3>- 	Post Your Offer Ad</h3>
                 </div>
                 
@@ -24,37 +24,37 @@
                         	<div class="want_category">
 
 							
-                            	<div class="want_cat" id="cat1" onclick="getCategory_1(1,this,2,this.id);">
+                            	<div class="want_cat" id="cat1" onclick="getCategory_2(1,this,2,this.id);">
                                 	<p><a href="javascript:void(0);"><img src="images/search_icon.gif"><br />Electronic <br />Goods</a></p>
 
                                 </div>
 
-                            	<div class="want_cat" id="cat2" onclick="getCategory_1(2,this,2,this.id);">
+                            	<div class="want_cat" id="cat2" onclick="getCategory_2(2,this,2,this.id);">
                                 	<p><a href="javascript:void(0);"><img src="images/search_icon.gif"><br />Home & Office  <br />Goods</a></p>
 
                                 </div>	
 
-                            	<div class="want_cat" id="cat3" onclick="getCategory_1(3,this,2,this.id);">
+                            	<div class="want_cat" id="cat3" onclick="getCategory_2(3,this,2,this.id);">
                                 	<p><a href="javascript:void(0);"><img src="images/search_icon.gif"><br />Consumers <br />Goods</a></p>
 
                                 </div>	
 
-                            	<div class="want_cat" id="cat4" onclick="getCategory_1(4,this,2,this.id);">
+                            	<div class="want_cat" id="cat4" onclick="getCategory_2(4,this,2,this.id);">
                                 	<p><a href="javascript:void(0);"><img src="images/search_icon.gif"><br />Vehicles <br /></a></p>
 
                                 </div>	
 
-                            	<div class="want_cat" id="cat5" onclick="getCategory_1(5,this,2,this.id);">
+                            	<div class="want_cat" id="cat5" onclick="getCategory_2(5,this,2,this.id);">
                                 	<p><a href="javascript:void(0);"><img src="images/search_icon.gif"><br />Real Estate &  <br />Developers</a></p>
 
                                 </div>	
 
-                            	<div class="want_cat" id="cat6" onclick="getCategory_1(6,this,2,this.id);">
+                            	<div class="want_cat" id="cat6" onclick="getCategory_2(6,this,2,this.id);">
                                 	<p><a href="javascript:void(0);"><img src="images/search_icon.gif"><br />Jobs <br /></a></p>
 
                                 </div>	
 
-                            	<div class="want_cat" id="cat7" onclick="getCategory_1(7,this,2,this.id);">
+                            	<div class="want_cat" id="cat7" onclick="getCategory_2(7,this,2,this.id);">
                                 	<p><a href="javascript:void(0);"><img src="images/search_icon.gif"><br />Services <br /></a></p>
 
                                 </div>	                                	
