@@ -15,268 +15,47 @@
                 	<h3>- 	Post Your Offer Ad</h3>
                 </div>
                 
-            <!--    <div class="form">
-                	<form action="#" name="form1" id="form1" enctype="multipart/form-data" method="post">
-                    	<div class="select_cat">
-                        <div class="scat">Select Category</div>
-                        	<div class="want_category">
-                            
-                            	<div class="want_cat">
-                                	<p><a href="#">Electronic <br />Goods</a></p>
-                                </div>
-                            	<div class="want_cat">
-                                	<p><a href="#">Home & Office  <br />Goods</a></p>
-                                </div>	
-                            	<div class="want_cat">
-                                	<p><a href="#">Consumers <br />Goods</a></p>
-                                </div>	
-                            	<div class="want_cat">
-                                	<p><a href="#" class="active">Vehicles <br /></a></p>
-                                </div>	
-                            	<div class="want_cat">
-                                	<p><a href="#">Real Estate &  <br />Developers</a></p>
-                                </div>	
-                            	<div class="want_cat">
-                                	<p><a href="#">Jobs <br /></a></p>
-                                </div>	
-                            	<div class="want_cat">
-                                	<p><a href="#">Services <br /></a></p>
-                                </div>	                                	
-                            </div>
-                        </div>
-                        <div class="top_arrow">
-                        </div>
-                        <div class="w_cat">
-                        	<div class="w_cat_list">
-                            	<div class="cat_list">
-                                <p class="select"><a href="#" class="active">Cars</a></p>
-                                </div>
-                            	<div class="cat_list">
-                                	<p><a href="#">Bicycles</a></p>
-                                </div>
-                            	<div class="cat_list">
-                                	<p><a href="#">Boats</a></p>
-                                </div>
-
-                            	<div class="cat_list">
-                                	<p><a href="#">Buses</a></p>
-                                </div>
-                            	<div class="cat_list">
-                                	<p><a href="#">Commercial Trucks</a></p>
-                                </div>
-
-                            	<div class="cat_list">
-                                	<p><a href="#">Dirt Bikes</a></p>
-                                </div>
-                            	<div class="cat_list">
-                                	<p><a href="#">Mopeds</a></p>
-                                </div>
-                            	<div class="cat_list">
-                                	<p><a href="#">Motorcycles</a></p>
-                                </div>
-
-                            </div>
-                        	<div class="w_cat_list">
-                            	<div class="cat_list">
-                                <p><a href="#" >Petrol Car</a></p>
-                                </div>
-                            	<div class="cat_list">
-                                	<p  class="select"><a href="#" class="active">Diesel Car</a></p>
-                                </div>
-                            	<div class="cat_list">
-                                	<p><a href="#">LPG Car</a></p>
-                                </div>
-
-                            	<div class="cat_list">
-                                	<p><a href="#">Electric Car</a></p>
-                                </div>
-                            	<div class="cat_list">
-                                	<p><a href="#">CNG Car</a></p>
-                                </div>
-
-                            	<div class="cat_list">
-                                	<p><a href="#">Hybrid Car</a></p>
-                                </div>
-                            	<div class="cat_list">
-                                	
-                                </div>
-                            	<div class="cat_list">
-                                	
-                                </div>
-                            </div>
-                        	<div class="w_cat_list">
-                            	
-                            </div>
-
-                        </div>
-                        <div class="w_cat1">
-                       	  <div class="label">
-                            	<span>*</span>Condition :
-                          </div>
-                            <div class="box_area">
-                           	  <input type="radio" name="radio" id="radio" value="radio" /> 
-                           	  New  &nbsp;&nbsp;&nbsp;
-                           	   <input type="radio" name="radio2" id="radio2" value="radio2" /> 
-                           	   Used                            </div>
-                        </div>
-                    <div class="w_cat1">
-                       	  <div class="label">
-                            	<span>*</span>Location  :
-                          </div>
-                            <div class="box_area">
-									<select name="Country">
-                                    	<option>Select</option>
-                                    </select> 
-									<select name="City">
-                                    	<option>Select</option>
-                                    </select>                           
-                               </div>
-                        </div>
-                        
-                        <div class="w_cat1">
-                       	  <div class="label">
-                            	<span>*</span>Condect By :
-                          </div>
-                            <div class="box_area">
-                           	  <input type="radio" name="radio" id="radio" value="radio" /> 
-                           	  E-mail  &nbsp;&nbsp;&nbsp;
-                           	   <input type="radio" name="radio2" id="radio2" value="radio2" /> 
-                           	   Used                            </div>
-                        </div>
-                        
-                    <div class="w_cat1">
-                       	  <div class="label">
-                            	<span>*</span>E-Mail Id:
-                          </div>
-                            <div class="box_area">
-                           	  <input type="text" name="radio" id="radio" value="Shan1and1@gmail.com" class="textbox" /> 
-                           	</div>
-                        </div>
-                        
-                        <div class="w_cat1">
-                       	  <div class="label1">
-                          Your Ad Will Expire at within 2 Weeks <span class="click"><b>To Change your Ad durution</b> <a href="#">Click here</a></span>
-                          </div>
-                       	  <div class="label1">
-                            Your Ad Describtion :
-                          </div>
-                          
-                        </div>
-                        
-                        <div class="w_cat1">
-                       	  <div class="label1">
-                          	<textarea name="textarea" id="textarea" cols="45" rows="5">I want in New Diesel Car in Adyar,Conduct me regarding this to Shan1and1@gmail.com</textarea><img src="images/edit.jpg" />
-                          </div>
-                        </div>
-                        
-                        <div class="w_cat1">
-                       	  <div class="label1">
-                       		<input type="submit" name="button2" id="button2" value="POST MY AD" class="but" />
-                          </div>
-                        </div>
-                        
-                    </form>
-                </div>
--->
-			<!--	<div class="bor_blue"></div>-->
-                
-            	<div class="just_expand  dnone" id="just_post_off_content">
+                	<div class="just_expand  dnone" id="just_post_off_content">
 	            
                     <div class="form">
                 	<form action="#"  onsubmit="return post_offer_ad();" name="post_offer_adForm" id="post_offer_ad" enctype="multipart/form-data" method="post">
                     	<div class="select_cat">
                                                <div class="scat">Select Category</div>
                         	<div class="want_category">
-                            
-                            	<div class="want_cat" onclick="getCategory_1(1,this,2);">
-                                	<p><a href="javascript:void(0);">Electronic <br />Goods</a></p>
+							
+                            	<div class="want_cat" id="cat1" onclick="getCategory_1(1,this,2,this.id);">
+                                	<p><a href="javascript:void(0);"><img src="images/search_icon.gif"><br />Electronic <br />Goods</a></p>
                                 </div>
-                            	<div class="want_cat" onclick="getCategory_1(2,this,2);">
-                                	<p><a href="javascript:void(0);">Home & Office  <br />Goods</a></p>
+                            	<div class="want_cat" id="cat2" onclick="getCategory_1(2,this,2,this.id);">
+                                	<p><a href="javascript:void(0);"><img src="images/search_icon.gif"><br />Home & Office  <br />Goods</a></p>
                                 </div>	
-                            	<div class="want_cat" onclick="getCategory_1(3,this,2);">
-                                	<p><a href="javascript:void(0);">Consumers <br />Goods</a></p>
+                            	<div class="want_cat" id="cat3" onclick="getCategory_1(3,this,2,this.id);">
+                                	<p><a href="javascript:void(0);"><img src="images/search_icon.gif"><br />Consumers <br />Goods</a></p>
                                 </div>	
-                            	<div class="want_cat" onclick="getCategory_1(4,this,2);">
-                                	<p><a href="javascript:void(0);">Vehicles <br /></a></p>
+                            	<div class="want_cat" id="cat4" onclick="getCategory_1(4,this,2,this.id);">
+                                	<p><a href="javascript:void(0);"><img src="images/search_icon.gif"><br />Vehicles <br /></a></p>
                                 </div>	
-                            	<div class="want_cat" onclick="getCategory_1(5,this,2);">
-                                	<p><a href="javascript:void(0);">Real Estate &  <br />Developers</a></p>
+                            	<div class="want_cat" id="cat5" onclick="getCategory_1(5,this,2,this.id);">
+                                	<p><a href="javascript:void(0);"><img src="images/search_icon.gif"><br />Real Estate &  <br />Developers</a></p>
                                 </div>	
-                            	<div class="want_cat" onclick="getCategory_1(6,this,2);">
-                                	<p><a href="javascript:void(0);">Jobs <br /></a></p>
+                            	<div class="want_cat" id="cat6" onclick="getCategory_1(6,this,2,this.id);">
+                                	<p><a href="javascript:void(0);"><img src="images/search_icon.gif"><br />Jobs <br /></a></p>
                                 </div>	
-                            	<div class="want_cat" onclick="getCategory_1(7,this,2);">
-                                	<p><a href="javascript:void(0);">Services <br /></a></p>
+                            	<div class="want_cat" id="cat7" onclick="getCategory_1(7,this,2,this.id);">
+                                	<p><a href="javascript:void(0);"><img src="images/search_icon.gif"><br />Services <br /></a></p>
                                 </div>	                                	
                             </div>
                         </div>
-                        <div class="top_arrow">
-                        </div>
+                        <div class="top_arrow" style="display:none;"> </div>
 						
 						
                         <div class="w_cat">
                         	<div class="w_cat_list" id="category_2">
-                            	<!--
-								<div class="cat_list">
-                                <p class="select"><a href="#" class="active">Cars</a></p>
-                                </div>
-                            	<div class="cat_list">
-                                	<p><a href="#">Bicycles</a></p>
-                                </div>
-                            	<div class="cat_list">
-                                	<p><a href="#">Boats</a></p>
-                                </div>
-
-                            	<div class="cat_list">
-                                	<p><a href="#">Buses</a></p>
-                                </div>
-                            	<div class="cat_list">
-                                	<p><a href="#">Commercial Trucks</a></p>
-                                </div>
-
-                            	<div class="cat_list">
-                                	<p><a href="#">Dirt Bikes</a></p>
-                                </div>
-                            	<div class="cat_list">
-                                	<p><a href="#">Mopeds</a></p>
-                                </div>
-                            	<div class="cat_list">
-                                	<p><a href="#">Motorcycles</a></p>
-                                </div>
-                                -->
                             </div>
 							
 							
                         	<div class="w_cat_list" id="category_3">
-                            	<!--
-								<div class="cat_list">
-                                <p><a href="#" >Petrol Car</a></p>
-                                </div>
-                            	<div class="cat_list">
-                                	<p  class="select"><a href="#" class="active">Diesel Car</a></p>
-                                </div>
-                            	<div class="cat_list">
-                                	<p><a href="#">LPG Car</a></p>
-                                </div>
-
-                            	<div class="cat_list">
-                                	<p><a href="#">Electric Car</a></p>
-                                </div>
-                            	<div class="cat_list">
-                                	<p><a href="#">CNG Car</a></p>
-                                </div>
-
-                            	<div class="cat_list">
-                                	<p><a href="#">Hybrid Car</a></p>
-                                </div>
-                            	<div class="cat_list">
-                                	
-                                </div>
-                            	<div class="cat_list">
-                                	
-                                </div>
-								-->
+            
                             </div>
                         	<div class="w_cat_list">
                             	
@@ -336,7 +115,7 @@
                         
                         <div class="w_cat1">
                        	  <div class="label1">
-                            <img src="images/fck.jpg" class="textarea" />
+                            <textarea class="textarea" rows="50" cols="40"></textarea>
                           </div>   
                         </div>
                         
@@ -348,8 +127,7 @@
                         
                         <div class="w_cat1">
                        	  <div class="label2">
-                            <textarea name="sms_ad_look" id="sms_ad_look" cols="45" rows="5" class="textarea"></textarea>
-                            <img src="images/edit.jpg" />
+                            <textarea class="textarea" rows="50" cols="40"></textarea>
                           </div>   
                         </div>
                         
@@ -441,10 +219,18 @@
                             	<span>*</span>E-Mail Id:
                           </div>
                             <div class="box_area">
-                           	  <input type="text" name="email" id="email" value="Shan1and1@gmail.com" class="textbox" /> 
+                           	  <input type="text" name="email" id="email" value="" class="textbox" /> 
                            	</div>
                         </div>
-                        
+
+                    <div class="w_cat1">
+                       	  <div class="label">
+                            	<span>*</span>Tag:
+                          </div>
+                            <div class="box_area">
+                           	  <input type="text" name="tag" id="tag" value="" class="textbox" /> 
+                           	</div>
+                        </div>                        
                         <input type="hidden" name="category_id" id="category_id" value="">
                         <input type="hidden" name="product_id" id="product_id" value="">
                         <input type="hidden" name="product_type_id" id="product_type_id" value="">
