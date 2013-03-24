@@ -1,6 +1,10 @@
 <?php
-include_once('./classes/class.public.php');
+include('./classes/class.database.php');
+include('./classes/class.public.php');
+$db = new Dbconnection();
 $pub = new Pub();
+$citylist = $pub->getCity(); 
+$arealist = $pub->getArea(); 
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -74,19 +78,16 @@ function ddWithAutoSuggest(){
         	  <input type="text" name="textfield" id="textfield" placeholder="Enter Your Search term here…"  class="inputbox"/>
               <!--<input type="text" name="textfield2" id="textfield2" value="Enter Your Location here…" class="inputbox"/>-->
 			  			<div class="ui-input">
+
 		<select data-placeholder="Levy..." style="width:43%" class="chzn-select optionCls txtbox wid inputbox" name="idfetchlevy" id="idfetchlevy">
 		<option>--Select City--</option>
-		<option>Bangalore</option>
-		<option>Chennai</option>
-		<option>Mumbai</option>
-		<option>Coimbatore</option>
-		<option>Madurai</option>
-		<option>Calcutta</option>
-		<option>New Delhi</option>
-		<option>Hyderabad</option>
-		<option>Trichy</option>
-		<option>Vishakapttanam</option>
-		<option>Cochin</option>
+		<?php
+
+		foreach($citylist as $key=>$cty)
+		{
+			echo "<option value='".$key."'>".$cty."</option>";
+		}
+		?>
 		</select>
              <!-- <input type="text" name="textfield2" id="textfield2" placeholder="Enter Your Location here…" class="inputbox"/>
 			  <span class="ui-icon-delete"><img src="http://www.uwindsor.ca/its/lotusnotes/sites/uwindsor.ca.its.lotusnotes/files/Red-X-Icon.jpg"></span>-->
