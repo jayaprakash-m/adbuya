@@ -3,9 +3,8 @@
                             	<span>*</span>Price :  
                           </div>
                             <div class="box_area">
-                              <input type="text" name="price" value="3,00,000" class="textbox" /> 
-                              <input type="radio" name="price"  value="radio5" /> 
-                              Contact me                            </div>
+                              <input type="text" name="price" value="" class="textbox" /> 
+                             </div>
                         </div>
                         
 					<div class="w_cat1">
@@ -14,7 +13,9 @@
                           </div>
                             <div class="box_area">
 									<select name="delivery_mode">
+									    <option>-Select-</option>
                                     	<option>Direct Pick Up</option>
+										<option>Indirect Pick Up</option>
                                     </select> 
 									                           
                                </div>
@@ -25,7 +26,7 @@
                             	<span  class="space"></span>Free with this : 
                           </div>
                             <div class="box_area">
-                              <input type="text" name="free_with_this" id="free_with_this" value="5 Services Free" class="textbox" />
+                              <input type="text" name="free_with_this" id="free_with_this" value="" class="textbox" />
                             </div>
                         </div>                  
 
@@ -34,9 +35,9 @@
                             	<span>*</span>Condition :
                           </div>
                             <div class="box_area">
-                           	  <input type="radio" name="condition"  value="radio" /> 
+                           	  <input type="radio" checked name="condition"  value="new" /> 
                            	  New  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                           	   <input type="radio" name="condition"  value="radio2" /> 
+                           	   <input type="radio" name="condition"  value="used" /> 
                            	   Used                            </div>
                         </div>
                         
@@ -45,9 +46,9 @@
                             	<span>*</span>Advertiser :
                           </div>
                             <div class="box_area">
-                           	  <input type="radio" name="advertiser"  value="radio" /> 
+                           	  <input type="radio" checked name="advertiser"  value="individual" /> 
                            	  Individual  &nbsp;&nbsp;&nbsp;
-                           	   <input type="radio" name="advertiser" value="radio2" /> 
+                           	   <input type="radio" name="advertiser" value="dealer" /> 
                            	   Dealer                            </div>
                         </div>
                     
