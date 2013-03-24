@@ -6,7 +6,8 @@ class Pub
 	 
 	 }
 	
-	public function  getTemplates() {
+	public function  getTemplates($citylist,$arealist) {
+	
 		// TO GET THE PAGE NAME:
 		$page  =isset($_REQUEST['page']) ? $_REQUEST['page'] : "index";
 		$section  =isset($_REQUEST['section']) ? $_REQUEST['section'] : " ";		 
@@ -66,6 +67,30 @@ class Pub
 	
 	
 	
+		public function getCity(){
+	   // To get the cities list
+	   $arr = array();
+	   $query = "select id,city from ad_master_city where status = '1'";
+	   $result  = mysql_query($query);
+	   while($res = mysql_fetch_array($result))
+	   {
+		   $arr[$res['id']] = $res['city'];
+	   }
+	   return $arr;   
+	}
+	
+	public function getArea(){
+	   // To get the cities list
+	   $arr = array();
+	   $query = "select id,area from ad_master_area where status = '1'";
+	   $result  = mysql_query($query);
+	   while($res = mysql_fetch_array($result))
+	   {
+		   $arr[$res['id']] = $res['area'];
+	   }
+	   return $arr;   
+	}
+	
 	public function getProduct_types($id){
 	   // To get the category list
 	   $arr = array();
@@ -82,54 +107,65 @@ class Pub
         
         public function insert_post_offer($formdata)
         {
-            
-            //$product_id = $formdata[''];
-            //$product_type_id = $formdata[''];
-            $form_type_id = $formdata['form_type_id'];
-            $category_id = $formdata['category_id'];
-            $product_id = $formdata['product_id'];
-            $product_type_id = $formdata['product_type_id'];
-            $price = $formdata['price'];
-            $delivery_mode = $formdata['delivery_mode'];
-            $free_with_this = $formdata['free_with_this']; 
-            //$add_desc = $formdata['add_desc'];
-            $sms_ad_look = $formdata['sms_ad_look']; 
-            $you_tube_link = $formdata['youtube_link']; 
-            $website_link = $formdata['website_link'];
-            //$product_photos_id = $formdata['']; 
-            $expire_duration = $formdata['expire_duration'];
-            $location = $formdata['location'];
-            $area = $formdata['area'];
-            $contact_by = $formdata['contact_by'];
-            $email_id = $formdata['email'];
-            //$created_by = $formdata[''];
-            //$created_on = $formdata[''];
-            //$status = $formdata[''];
-            $query = "insert into post_offer_ad set category_id='$category_id',product_id='$product_id',product_type_id='$product_type_id',form_type_id = '$form_type_id',price = '$price',delivery_mode='$delivery_mode',free_with_this='$free_with_this',sms_ad_look='$sms_ad_look',you_tube_link='$you_tube_link',website_link='$website_link',
-expire_duration='$expire_duration',contact_by='$contact_by',email_id='$email_id',location='$location',area='$area'";
+			$category_level1 = $formdata['category_level1'];
+			$category_level2 = $formdata['category_level2'];
+			$category_level3 = $formdata['category_level3'];
+			$category_level4 = $formdata['category_level4'];
+		    $form_type_id = $formdata['form_type_id'];
+			$your_ad_title = $formdata['your_ad_title'];
+			$your_ad_desc = $formdata['your_ad_desc'];
+			$your_sms_look = $formdata['your_sms_look'];
+			$you_tube_link = $formdata['youtube_link']; 
+			$website_link = $formdata['website_link'];
+			$city = $formdata['city'];
+			$area = $formdata['area'];
+			$contact_by = $formdata['contact_by'];
+			$email_id = $formdata['email'];
+			$tags = $formdata['tags'];
+
+			
+			$query = "insert into buy_post_offer_ad set 
+			category_level1='$category_level1',
+			category_level2='$category_level2',
+			category_level3='$category_level3',
+			category_level4='$category_level4',
+			form_type_id = '$form_type_id',
+			ad_title='$your_ad_title',
+			ad_desc='$your_ad_desc',
+			sms_ad_look='$your_sms_look',
+			you_tube_link='$you_tube_link',
+			website_link='$website_link',
+			city='$city',
+			area='$area',
+			contact_by='$contact_by',
+			email_id='$email_id',
+			tags = '$tags'";
+
             $result  = mysql_query($query);
             $last_insert_id = mysql_insert_id();
-            
 
-/*
-CREATE TABLE IF NOT EXISTS `offer_sub_form4` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `common_form_id` bigint(20) NOT NULL,
-  `condition` varchar(100) NOT NULL,
-  `advertiser` varchar(100) NOT NULL,
-  `brand` varchar(100) NOT NULL,
-  `model` varchar(100) NOT NULL,
-  `status` int(11) NOT NULL DEFAULT '1',
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
-*/
-            $condition = $formdata['condition'];
-            $brand = $formdata['brand'];
-            $advertiser = $formdata['advertiser'];
-            $model = $formdata['model'];
+            if($form_type_id==1)
+			{
+				$price = $formdata['price'];
+				$delivery_mode = $formdata['delivery_mode'];
+				$free_with_this = $formdata['free_with_this']; 
+				$condition = $formdata['condition']; 
+				$advertiser = $formdata['advertiser']; 
+				$brand = $formdata['brand']; 
+				$model = $formdata['model']; 
+				
+				$query1 = "insert into buy_offer_sub_form1 
+				set common_form_id='$last_insert_id',
+				price='$price',
+				delivery_mode='$delivery_mode',
+				free_with_this='$free_with_this',
+				condition_status='$condition',
+				advertiser='$advertiser',
+				brand='$brand',
+				model='$model'";
+				$result1 = mysql_query($query1);
 
-            $query1 = "insert into offer_sub_form4 set common_form_id='$last_insert_id',condition_status='$condition',advertiser='$advertiser',brand='$brand',model='$model'";
-             $result1 = mysql_query($query1);
+            }
            
         }
 
