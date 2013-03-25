@@ -13,15 +13,15 @@ $arealist = $pub->getArea();
 
 <title>adbuya</title>
 <link rel="shortcut icon" href="images/favicon.ico" />
-<link href="/styles/styles.css" type="text/css" rel="stylesheet" />
-<link href="/styles/addbuya.css" type="text/css" rel="stylesheet" />
+<link href="styles/styles.css" type="text/css" rel="stylesheet" />
+<link href="styles/addbuya.css" type="text/css" rel="stylesheet" />
 <link rel="stylesheet" href="scripts/chosen/chosen.css" />
 <link type='text/css' href='styles/stylesheet.css' rel='stylesheet' media='screen' />
 <link type='text/css' href='styles/basic.css' rel='stylesheet' media='screen' />
 
 <!--<script src="/scripts/jquery-1.9.0.min.js" type="text/javascript"></script>-->
-<script type="text/javascript" src="/scripts/jquery-1.8.1.js" ></script>
-<script type="text/javascript" src="/scripts/addbuya.js" ></script>
+<script type="text/javascript" src="scripts/jquery-1.8.1.js" ></script>
+<script type="text/javascript" src="scripts/addbuya.js" ></script>
 <script type="text/javascript" src="scripts/jquery.simplemodal.js"></script>
 <script type="text/javascript" src="scripts/init.js"></script>
 <script src="scripts/chosen/chosen.jquery.js" type="text/javascript"></script>
