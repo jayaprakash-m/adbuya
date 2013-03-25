@@ -4,8 +4,8 @@ include_once('include/config.php');
 // calls header page 
 include_once('include/header.php');
 // Page Rendering.
-$pub->getTemplates(); 
- 
+
+$pub->getTemplates($citylist,$arealist); 
 // calls footer page
 include_once('include/footer.php');
 ?>
