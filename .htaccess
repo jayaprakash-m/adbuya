@@ -2,16 +2,16 @@ RewriteEngine On
 RewriteBase /
 
 #General Rule For all pages.
+RewriteRule ^new/$ new/ [L,NC]
+RewriteRule ^ajax/form$ /trunk/ajax/get_dynamic_forms.php [L,NC]
+RewriteRule ^form_submit/([a-zA-AZ0-9_]+)$ /trunk/ajax/$1.php [L,NC]
+RewriteRule ^ajax/category$ /trunk/ajax/getCategory.php [L,NC]
+RewriteRule ^ajax/product_type$ /trunk/ajax/getProductTypes.php [L,NC]
 
-RewriteRule ^ajax/form$ ajax/get_dynamic_forms.php [L,NC]
-RewriteRule ^form_submit/([a-zA-AZ0-9_]+)$ ajax/$1.php [L,NC]
-RewriteRule ^ajax/category$ ajax/getCategory.php [L,NC]
-RewriteRule ^ajax/product_type$ ajax/getProductTypes.php [L,NC]
-
-RewriteRule ^([a-zA-AZ0-9_]+)/$ index.php?page=$2&section=$1 [L,NC]
-RewriteRule ^([a-zA-AZ0-9_]+)$ index.php?page=$2&section=$1 [L,NC]
-RewriteRule ^([a-zA-AZ0-9_]+)/([a-zA-AZ0-9_]+)/$ index.php?page=$2&section=$1 [L,NC]
-RewriteRule ^([a-zA-AZ0-9_]+)/([a-zA-AZ0-9_]+)$ index.php?page=$2&section=$1 [L,NC]
+RewriteRule ^([a-zA-AZ0-9_]+)/$ /trunk/index.php?page=$2&section=$1 [L,NC]
+RewriteRule ^([a-zA-AZ0-9_]+)$ /trunk/index.php?page=$2&section=$1 [L,NC]
+RewriteRule ^([a-zA-AZ0-9_]+)/([a-zA-AZ0-9_]+)/$ /trunk/index.php?page=$2&section=$1 [L,NC]
+RewriteRule ^([a-zA-AZ0-9_]+)/([a-zA-AZ0-9_]+)$ /trunk/index.php?page=$2&section=$1 [L,NC]
 
 
 
