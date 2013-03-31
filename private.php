@@ -1,7 +1,7 @@
 <?php
 include 'config.php';
 
-// Check if the user is logged in
+// Check if the user is logged in 
 
 if(!isset($_SESSION['username']))
 {
