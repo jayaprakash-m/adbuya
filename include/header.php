@@ -15,22 +15,25 @@ $arealist = $pub->getArea();
 <link rel="shortcut icon" href="images/favicon.ico" />
 <link href="styles/styles.css" type="text/css" rel="stylesheet" />
 <link href="styles/addbuya.css" type="text/css" rel="stylesheet" />
-<link rel="stylesheet" href="scripts/chosen/chosen.css" />
+
 <link type='text/css' href='styles/stylesheet.css' rel='stylesheet' media='screen' />
 <link type='text/css' href='styles/basic.css' rel='stylesheet' media='screen' />
 
 <!--<script src="/scripts/jquery-1.9.0.min.js" type="text/javascript"></script>-->
 <script type="text/javascript" src="scripts/jquery-1.8.1.js" ></script>
 <script type="text/javascript" src="scripts/addbuya.js" ></script>
-<script type="text/javascript" src="scripts/jquery.simplemodal.js"></script>
 <script type="text/javascript" src="scripts/init.js"></script>
+
+<!-- Search Enabled Dropdown Begins -->
+<link rel="stylesheet" href="scripts/chosen/chosen.css" />
 <script src="scripts/chosen/chosen.jquery.js" type="text/javascript"></script>
+<!-- Search Enabled Dropdown Ends -->
 
 <script type="text/javascript">
-	/*
+/*
    Function : ddWithAutoSuggest()
    Description : For auto suggest with drop down function
-   Author : A.Palani
+   Author : R.S.VINAYAGAM
 */
 function ddWithAutoSuggest(){
 	$(".chzn-select").chosen(); $(".chzn-select-deselect").chosen({allow_single_deselect:true}); 
@@ -111,32 +114,7 @@ function ddWithAutoSuggest(){
             	<h1><a href="#">- All Category</a></h1>
             </div>
         </div>
-
-		<!-- Modal Ajax Login Form -->
-<div id="login_form" style='display:none'>
-
-<div id="status" align="left">
-
-<center><h1 class="loginform"><img src="images/key.png" align="absmiddle">&nbsp;LOGIN</h1>
-
-<div id="login_response"><!-- spanner --></div> </center>
-
-<form id="login" action="javascript:alert('success!');">
-<input type="hidden" name="action" value="user_login">
-<input type="hidden" name="module" value="login">
-<label>E-Mail</label><input class="modalbox" type="text" name="email"><br />  
-<label>Password</label><input class="modalbox" type="password" name="password"><br />  
-<label>&nbsp;</label><input class="modalbox" value="Login" name="Login" id="submit" class="big" type="submit" />
-
-<div id="ajax_loading">
-<img align="absmiddle" src="images/spinner.gif">&nbsp;Processing...
-</div>
-
-</form>
- </div>
-</div>
-<!-- Modal Ajax Login Form -->
-        
+      
         <div class="content_area">
 		<!-------content area starts----->
 <script type="text/javascript">ddWithAutoSuggest();</script>
