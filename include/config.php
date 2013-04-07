@@ -6,8 +6,8 @@
 	//if(stristr($_SERVER['HTTP_HOST'] ,"localhost")) { // Localhost
 		/* DB connection String*/
 		$DBINFO['DBHOST'] = "localhost";
-		$DBINFO['DBName'] = "adbuya";
+		$DBINFO['DBName'] = "addbuya";
 		$DBINFO['DBUserName'] = "root";
-		$DBINFO['DBPassword'] = "root";
+		$DBINFO['DBPassword'] = "";
 	//}
 ?>
